@@ -1,0 +1,43 @@
+{
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended"
+  ],
+  "rules": {
+    // enable additional rules
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
+    "prefer-arrow-callback": "error",
+
+    // override default options for rules from base configurations
+    "comma-dangle": ["error", "never"],
+    "no-cond-assign": ["error"],
+
+    // disable rules from base configurations
+    "no-debugger": 0,
+    "no-console": 0,
+    "new-cap": 0,
+    "strict": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "eol-last": 0,
+    "jsx-quotes": [1, "prefer-double"],
+    "no-unused-vars": 1
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "mocha": true
+  },
+  "root": true
+}
